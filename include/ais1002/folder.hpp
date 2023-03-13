@@ -18,7 +18,7 @@ namespace ais1002 {
             return path_;
         }
 
-        size_t numChildren() const {
+        [[nodiscard]] size_t numChildren() const {
 
             return children_.size();
         }
@@ -83,6 +83,7 @@ namespace ais1002 {
     private:
         std::string path_;
 
+        // note: NON owning pointers
         folder *parent_ = nullptr;
         std::vector<folder *> children_;
     };

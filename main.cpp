@@ -29,7 +29,5 @@ int main() {
         std::cout << f->getAbsolutePath() << std::endl;
     });
 
-
-
     return 0;
 }
